@@ -21,7 +21,8 @@ app.use(routes);
 // set up promises with mongoose
 mongoose.Promise = global.Promise;
 // Connect to MongoDB
-mongoose.connect(process.env.MONGO_URI || "mongodb://localhost/googlebooks");
+// mongoose.connect(process.env.MONGO_URI || "mongodb://localhost/googlebooks");
+mongoose.connect(process.env.Mongo_URI || "mongodb://heroku_pklwclk7:ohpgo03sb1emivl4egth50h7ii@ds145639.mlab.com:45639/heroku_pklwclk7")
 
 
 // Start the API server
