@@ -21,7 +21,7 @@ app.use(routes);
 // set up promises with mongoose
 mongoose.Promise = global.Promise;
 // Connect to MongoDB
-mongoose.connect(
+mongoose.connect(process.env.MONGO_URI || "mongodb://localhost/reactreadinglist"
  ,
 );
 
